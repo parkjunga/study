@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class ReadContent extends Component {
     render(){
+      console.log(this);
         console.log("Content render")
       return(
         <article>

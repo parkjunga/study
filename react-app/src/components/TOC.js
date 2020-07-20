@@ -4,7 +4,7 @@ class TOC extends Component {
   shouldComponentUpdate(newProps, newState){
     console.log('========TOC render shoudComponentUpdate',
     newProps.data, this.props.data);
-    // 원본바꾸면 해당 내용 비교가 힘듦 
+    // 원본바꾸면 해당 내용 비교가 힘듦 ( push보다는 concat이 유지보수용이)
     if (this.props.data === newProps.data){
       return false;
     }
